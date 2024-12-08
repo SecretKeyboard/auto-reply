@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+        }
+
+        html {
+            display: flex;
+            justify-content: center;
+            background-color: #eeeeef;
+        }
+
+        .main {
+            width: 40vw;
+            /* height: 40vw; */
+            display: flex;
+            flex-direction: column;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 10px gray;
+            margin-top: 20px;
+            gap: 0;
+        }
+
+        /* First Section */
+        .first {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 50px 30px 50px;
+            gap: 10px;
+            background-color: #377DFF;
+        }
+
+        .first * {
+            color: #fff;
+        }
+
+        .first h1 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 600;
+        }
+
+        .first img {
+            /* width: 50%; */
+            height: 90px;
+            object-fit: contain;
+        }
+
+        /* Second Section */
+        .second {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #F7FAFF;
+            padding: 30px 20px;
+            gap: 20px;
+        }
+
+        .second p {
+            width: 100%;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            text-align: left;
+            color: #1E2022;
+        }
+
+        /* Third Section */
+        .third {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            gap: 10px;
+            background-color: #377DFF;
+        }
+
+        .third * {
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .third a {
+            text-decoration: none;
+            color: yellow;
+        }
+
+        /* Media Queries for Responsiveness */
+
+        /* For screens smaller than 768px */
+        @media screen and (max-width: 768px) {
+            .main {
+                width: 80vw;
+                /* Increase the width to take up more space on smaller screens */
+            }
+
+            .first h1 {
+                font-size: 28px;
+            }
+
+            .second p {
+                font-size: 18px;
+            }
+
+            .first img {
+                width: 70%;
+                /* Adjust image width for smaller screens */
+            }
+
+            .third * {
+                font-size: 16px;
+                /* Smaller font size for readability on smaller screens */
+            }
+
+            .third a {
+                font-size: 16px;
+            }
+        }
+
+        /* For screens smaller than 480px */
+        @media screen and (max-width: 480px) {
+            .main {
+                width: 90vw;
+                /* Make the main container even larger for very small screens */
+            }
+
+            .first h1 {
+                font-size: 24px;
+            }
+
+            .second p {
+                font-size: 16px;
+            }
+
+            .first img {
+                width: 80%;
+                /* Adjust image size for even smaller screens */
+            }
+
+            .third * {
+                font-size: 14px;
+                /* Further reduce font size */
+            }
+
+            .third a {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <title>EMAIL</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="first">
+            <img src="ithink-slogan-negative.png" alt="Company Logo">
+            <h1>Спасибо за ваше сообщение</h1>
+        </div>
+        <div class="second">
+            <p>Уважаемый клиент,</p>
+            <p>Спасибо за обращение к нам. Мы получили ваше письмо, и наша команда рассмотрит ваш запрос в течение
+                следующих <b>5 рабочих дней</b>.</p>
+            <p>Заранее благодарим за ваше терпение!</p>
+            <p>С наилучшими пожеланиями,<br>Команда ITHINK</p>
+        </div>
+        <div class="third">
+            <h6>&copy; 2024 ITHINK. Все права защищены</h6>
+            <a href="https://www.ithink.uz/">Посетите наш сайт</a>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
